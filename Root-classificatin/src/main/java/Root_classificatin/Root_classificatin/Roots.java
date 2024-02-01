@@ -34,11 +34,11 @@ class Roots
       }
       
       if (a != 0) {
-	      if(q>0 )
+	      if(q==0 )
 	      {
 		      roots = Root_Types.Equal_roots; 
 	      }
-	      else if(q==0)
+	      else if(q>0)
 	      {
 		      // the equation has exactly one root
 		     
