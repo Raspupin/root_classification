@@ -26,7 +26,7 @@ class Roots
    {
       double q;
       
-      q = b*b - 4*a*c;
+      q = b*2 - 4*a*c;
      
       if (out_of_Range(a, 0, 100)|| out_of_Range(b, 0, 100)||out_of_Range(c, 0, 100)) {
     	  roots = Root_Types.ERROR;
