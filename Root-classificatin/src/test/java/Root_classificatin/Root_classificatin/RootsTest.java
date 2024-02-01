@@ -20,17 +20,7 @@ public class RootsTest
 
     @Test
     public void testPartion1AJustAboveMinimumBoundary() {
-    	Roots.calculate_roots(1, 2, 10);
-		
-		String  root_expected = Root_Types.No_roots.toString();
-		
-		
-		assertEquals(root_expected, Roots.root_types().toString());
-    }
-
-    @Test
-    public void testPartion1ANominalValue() {
-    	Roots.calculate_roots(40, 80, 1);
+    	Roots.calculate_roots(1, 4, 2);
 		
 		String  root_expected = Root_Types.Equal_roots.toString();
 		
@@ -39,10 +29,20 @@ public class RootsTest
     }
 
     @Test
-    public void testPartion1AJustBelowMaximumBoundary() {
-    	Roots.calculate_roots(99, 2, -1);
+    public void testPartion1ANominalValue() {
+    	Roots.calculate_roots(20, 80, 1);
 		
 		String  root_expected = Root_Types.Two_roots.toString();
+		
+		
+		assertEquals(root_expected, Roots.root_types().toString());
+    }
+
+    @Test
+    public void testPartion1AJustBelowMaximumBoundary() {
+    	Roots.calculate_roots(99, 1, 1);
+		
+		String  root_expected = Root_Types.No_roots.toString();
 		
 		
 		assertEquals(root_expected, Roots.root_types().toString());
