@@ -24,7 +24,7 @@ class Roots
    
    public static void calculate_roots(double a, double b, double c)
    {
-      double q, r;
+      double q;
       
       q = b*b - 4*a*c;
      
